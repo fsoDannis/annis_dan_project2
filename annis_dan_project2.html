@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang=" ">
 	<!-- Dan Annis
-		 Project 1
+		 Project 2
 		 08/2011
 		 https://github.com/fsoDannis/VFW
 		 -->
@@ -25,7 +25,7 @@
 					<legend>Assignments</legend>
 						<p> Each Supervisor should be tasked with at least one assignment. Use this form to create the daily assignments. If you are not sure which assignments need to be assigned, check out this <a href="http://www.dinkydetails.com" target="new">link</a> which has all the necessary assignments.</p>
 						<hr>
-						<select>
+						<select id="jobtime">
 								<option value="morning">Morning</option>
 								<option value="afternoon">Afternoon</option>
 								<option value="evening">Evening</option>
@@ -41,7 +41,7 @@
 							<li><label><input type="radio" value="kristy" name="sup">Kristy Hardin</label></li>
 							<li><label><input type="radio" value="fred" name="sup">Fred Lattimore</label></li>
 						</ul>
-					<label>What Needs Done:<input id="what" size="50" type="text">
+					<label>What Project:<input id="what" size="50" type="text">
 					<br><br>
 					How Much Needs done?
 					<br>
@@ -55,7 +55,7 @@
 						<br><br> 
 					<label>Completion Date: </label><input id="completion" type="date"/> 
 					<label>Time:
-						<select>
+						<select id="time">
 							<option value="9am">9:00 AM</option>
 							<option value="12pm">12:00 PM</option>
 							<option value="5pm">5:00 PM</option>
@@ -72,6 +72,6 @@
 			</form>	
 			
 		</div>
-		
+		<script>getItems();</script>
 	</body>
 </html>
