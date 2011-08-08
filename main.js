@@ -14,9 +14,9 @@ function getItems(){
 
 
 function storeItems(id){
-	var whatproject		= 	document.getElementsByID('whatproject').value;
-	var comments		=	document.getElementsByID('comments').value;
+	var whatproject		= 	document.getElementById('whatproject').value;
+	var comments		=	document.getElementById('comments').value;
 	
 	localStorage.setItem('appwhatproject',whatproject);
-	localStorage.setItems('appcomments', comments);
+	localStorage.setItem('appcomments', comments);
 }
