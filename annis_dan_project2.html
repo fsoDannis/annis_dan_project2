@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang=" ">
+	<!-- Dan Annis
+		 Project 1
+		 08/2011
+		 https://github.com/fsoDannis/VFW
+		 -->
+	<head>
+		<meta charset="utf-8" />
+		<title>Daily "Things that don't get done" List</title>
+		<meta name="Morning ToDo List" content=" "/>
+		<meta name="Work, Time Warner, Etc.." content=" " />
+		<meta name="robots" content="index,follow" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/main.js" type="text/javascrpt"></script>
+	</head>
+	
+	<body>
+		<div style="width:480px; height:680px;" > <!--Creating a section -->
+			<header id="newOrder">
+			<h1>Project List</h1>
+			</header>
+			<form action="http://process.php" method="post" target="_blank" onsubmit="return window.confirm(&quot;You are submitting information to an external page. Are you sure?);"> <!--Makes the submit button go somewhere -->
+				<fieldset>
+					<legend>Assignments</legend>
+						<p> Each Supervisor should be tasked with at least one assignment. Use this form to create the daily assignments. If you are not sure which assignments need to be assigned, check out this <a href="http://www.dinkydetails.com" target="new">link</a> which has all the necessary assignments.</p>
+						<hr>
+						<select>
+								<option value="morning">Morning</option>
+								<option value="afternoon">Afternoon</option>
+								<option value="evening">Evening</option>
+						</select>
+						</label>
+						<br>
+						<br>
+						Supervisor Name:
+						<ul>
+							<li><label><input type="radio" checked value="dan" name="sup">Dan Annis</label></li>
+							<li><label><input type="radio" value="ken" name="sup">Ken Senter</label></li>
+							<li><label><input type="radio" value="matt" name="sup">Matt Vornberg</label></li>
+							<li><label><input type="radio" value="kristy" name="sup">Kristy Hardin</label></li>
+							<li><label><input type="radio" value="fred" name="sup">Fred Lattimore</label></li>
+						</ul>
+					<label>What Needs Done:<input id="what" size="50" type="text">
+					<br><br>
+					How Much Needs done?
+					<br>
+					1<input type="range" min="1" max="5" value="1" step="1" onchange="showValue(this.value)"/>
+						<span id="range">5</span>
+						<script type="text/javascript">
+							function showValue(newValue){
+							document.getElementById("range").innerHTML=newValue;
+							}
+						</script>
+						<br><br> 
+					<label>Completion Date: </label><input id="completion" type="date"/> 
+					<label>Time:
+						<select>
+							<option value="9am">9:00 AM</option>
+							<option value="12pm">12:00 PM</option>
+							<option value="5pm">5:00 PM</option>
+							<option value="endOfDay">End of Day</option>
+						</select>
+					</label>
+					<br><br>
+					<label>Additional Notes:<br></label><textarea id="comments" cols="55" rows="4" placeholder="Leave a note..."></textarea>
+					<br><br>
+					<input id="submit" type="submit" class="submit" value="Ship it!" />
+				
+				</fieldset>
+				<br>
+			</form>	
+			
+		</div>
+		
+	</body>
+</html>

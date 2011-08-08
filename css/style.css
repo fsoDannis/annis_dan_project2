@@ -1,0 +1,137 @@
+/*  Dan Annis
+	Project 2
+	08/11
+*/
+
+header#newOrder {
+	display:block;
+	background: #35344f;
+	font-size:22px;
+	font-weight:bold;
+	font-family:"Times New Roman",Georgia,Serif;
+	font-style: italic;
+	padding: 2px 0px;
+	border: 1px solid #202934;
+}
+
+h1 {
+text-align:center;
+margin: 0px 0px;
+color: #FFFFFF;
+
+}
+
+form{
+	border: 1px solid #202934;
+	padding: 5px;
+	background-color:#28A6B6;
+}
+
+fieldset{
+border-color: #FFFFFF;
+
+}
+
+legend{
+color: #FFFFFF;
+font-weight: bold;
+letter-spacing:2px
+}
+
+p{
+line-height: 1.2em;
+}
+
+a {
+text-transform:uppercase;
+text-decoration:underline;
+color: #FFFFFF;
+}
+
+select{
+background-color: #000000;
+color: #FFFFFF;
+}
+
+label {
+ padding: 0px;
+}
+
+input[id='what']{
+background-color: #000000;
+color: #FFFFFF;
+border-radius: 5px;
+padding:1px 5px;
+}
+
+input[type='range'] {  
+    -webkit-appearance: none;  
+    width: 100px;  
+    height: 10px;  
+    padding: 0px;  
+    -webkit-border-radius: 5px;  
+    border-radius: 15px;  
+    border: 1px solid #525252;  
+    background-color: #000000;  
+}  
+
+input[type='range']::-webkit-slider-thumb {  
+    -webkit-appearance: none;  
+    background-color: #35344f;  
+    width: 10px;  
+    height: 10px;  
+    -webkit-border-radius: 10px;
+    border-radius: 10px;  
+    border: 1px solid #7309AA;
+
+} 
+
+     /*
+	Good source site for Sliders. 
+	http://davidbcalhoun.com/2011/implementing-iphone-slider-unlock-with-input-type-range
+     */
+     
+ul{ 
+  list-style-type: none;
+}
+
+input[id='completion']{
+background-color: #000000;
+color: #FFFFFF;
+border-radius: 5px;
+padding:1px 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+hr{
+color: #FFFFFF
+}
+
+input#submit{
+background-color: #35344f;
+color: #FFFFFF;
+border-radius: 5px;
+padding:2px 6px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
