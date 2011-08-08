@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang=" ">
+<html lang="">
 	<!-- Dan Annis
 		 Project 2
 		 08/2011
@@ -8,8 +8,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Daily "Things that don't get done" List</title>
-		<meta name="Morning ToDo List" content=" "/>
-		<meta name="Work, Time Warner, Etc.." content=" " />
+		<meta name="Morning To Do List" content=" "/>
+		<meta name="Work, Time Warner, Etc..." content=" " />
 		<meta name="robots" content="index,follow" />
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		
@@ -17,10 +17,10 @@
 	
 	<body>
 		<div style="width:480px; height:680px;" > <!--Creating a section -->
-			<header id="newOrder">
+			<header id="neworder">
 			<h1>Project List</h1>
 			</header>
-			<form action="http://process.php" method="post" target="_blank" onsubmit="return window.confirm(&quot;You are submitting information to an external page. Are you sure?);"> <!--Makes the submit button go somewhere -->
+			<form>
 				<fieldset>
 					<legend>Assignments</legend>
 						<p> Each Supervisor should be tasked with at least one assignment. Use this form to create the daily assignments. If you are not sure which assignments need to be assigned, check out this <a href="http://www.dinkydetails.com" target="new">link</a> which has all the necessary assignments.</p>
@@ -41,7 +41,7 @@
 							<li><label><input type="radio" value="kristy" name="sup" />Kristy Hardin</label></li>
 							<li><label><input type="radio" value="fred" name="sup" />Fred Lattimore</label></li>
 						</ul>
-					<label>What Project:</label><input id="what" size="50" type="text" />
+					<label>What Project:</label><input id='whatproject' size="50" type="text" />
 					<br /><br />
 					How Much Needs done?
 					<br />
@@ -71,7 +71,7 @@
 			</form>	
 			
 		</div>
-		<script src="js/main.js" type="text/javascrpt"></script>
+		<script src="main.js"></script>
 		<script>getItems();</script>
 	</body>
 </html>
