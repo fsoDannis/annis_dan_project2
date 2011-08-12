@@ -15,11 +15,13 @@
 		
 	</head>
 	
-	<body>
-		<div style="width:480px; height:680px;" > <!--Creating a section -->
+	<body><div id="container">
+			<div id="header" style="width:480px; height:55px;" > <!--Creating a section -->
 			<header id="neworder">
 			<h1>Project List</h1>
 			</header>
+			</div>
+			<div id="main" style="width:480px; height:680px;" >
 			<form action="#" onsubmit="storeItems();">
 				<fieldset>
 					<legend>Assignments</legend>
@@ -65,13 +67,15 @@
 					<br /><br />
 					<label>Additional Notes:</label><br /><textarea id="comments" cols="55" rows="4" placeholder="Leave a note..." ></textarea>
 					<br /><br />
-					<input id="submit" type="submit" class="submit" value="Ship it!" />
+					<input id="submit" type="submit" class="submit" value="Ship it!" />	
+				
 				</fieldset>
-				<br />
 			</form>	
-			
-		</div>
+			</div><!--main-->
+			<p id="clear"><a onmouseover="mouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal();location.reload();">Clear local Storage</a><p>
+		</div><!--container-->
 		<script src="main.js"></script>
 		<script>getItems();</script>
+		
 	</body>
 </html>
