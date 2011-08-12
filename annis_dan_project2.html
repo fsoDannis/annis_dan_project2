@@ -15,37 +15,38 @@
 		
 	</head>
 	
-	<body><div id="container">
-			<div id="header" style="width:480px; height:55px;" > <!--Creating a section -->
+	<body>
+	<div id="container"> <!-- Large container -->
+		<div id="header" style="width:480px; height:55px;" > <!--Creating a section -->
 			<header id="neworder">
 			<h1>Project List</h1>
 			</header>
-			</div>
-			<div id="main" style="width:480px; height:680px;" >
+		</div> 
+		<div id="main" style="width:480px; height:680px;" ><!-- main container -->
 			<form action="#" onsubmit="storeItems();">
 				<fieldset>
 					<legend>Assignments</legend>
-						<p> Each Supervisor should be tasked with at least one assignment. Use this form to create the daily assignments. If you are not sure which assignments need to be assigned, check out this <a href="http://www.dinkydetails.com" target="new">link</a> which has all the necessary assignments.</p>
-						<hr />
-						<select id="jobtime">
-								<option value="m">Morning</option>
-								<option value="a">Afternoon</option>
-								<option value="e">Evening</option>
-						</select>
+					<p> Each Supervisor should be tasked with at least one assignment. Use this form to create the daily assignments. If you are not sure which assignments need to be assigned, check out this <a href="http://www.dinkydetails.com" target="new">link</a> which has all the necessary assignments.</p>
+					<hr />
+					<select id="jobtime"> <!--Time of Day -->
+						<option value="m">Morning</option>
+						<option value="a">Afternoon</option>
+						<option value="e">Evening</option>
+					</select>
 						
-						<br />
-						<br />
-						Supervisor Name:
-						<ul id="supervisor">
-							<li><label><input type="radio" checked value="Dan Annis" name="sup" />Dan Annis</label></li>
-							<li><label><input type="radio" value="Ken Senter" name="sup" />Ken Senter</label></li>
-							<li><label><input type="radio" value="Matt Vornberg" name="sup" />Matt Vornberg</label></li>
-							<li><label><input type="radio" value="Kristy Hardin" name="sup" />Kristy Hardin</label></li>
-							<li><label><input type="radio" value="Fred Lattimore" name="sup" />Fred Lattimore</label></li>
-						</ul>
+					<br />
+					<br />
+					Supervisor Name:
+					<ul id="supervisor"><!--Who is doing what -->
+						<li><label><input type="radio" checked value="Dan Annis" name="sup" />Dan Annis</label></li>
+						<li><label><input type="radio" value="Ken Senter" name="sup" />Ken Senter</label></li>
+						<li><label><input type="radio" value="Matt Vornberg" name="sup" />Matt Vornberg</label></li>
+						<li><label><input type="radio" value="Kristy Hardin" name="sup" />Kristy Hardin</label></li>
+						<li><label><input type="radio" value="Fred Lattimore" name="sup" />Fred Lattimore</label></li>
+					</ul>
 					<label>What Project:</label><input id='whatproject' size="50" type="text" />
 					<br /><br />
-					How Much Needs done?
+					How Much Needs done?<!--What needs done -->
 					<br />
 					1<input type="range" min="1" max="5" value="1" step="1" onchange="showValue(this.value)"/>
 						<span id="range">5</span>
@@ -55,8 +56,8 @@
 							}
 						</script>
 						<br /><br /> 
-					<label>Completion Date: </label><input id="completion" type="date"/> 
-					<label>Time:</label>
+					<label>Completion Date: </label><input id="completion" type="date"/> <!--Date -->
+					<label>Time:</label><!--Time of Day -->
 						<select id="time">
 							<option value="9am">9:00 AM</option>
 							<option value="12pm">12:00 PM</option>
@@ -72,10 +73,10 @@
 				</fieldset>
 			</form>	
 			</div><!--main-->
+			<!--Clearing -->
 			<p id="clear"><a onmouseover="mouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal();location.reload();">Clear local Storage</a><p>
-		</div><!--container-->
-		<script src="main.js"></script>
-		<script>getItems();</script>
-		
+		</div><!--Large container-->
+	<script src="main.js"></script>
+	<script>getItems();</script>
 	</body>
 </html>
