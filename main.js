@@ -3,10 +3,12 @@ function getItems(){
 		var timeValue			=	localStorage.getItem('appjobtime');
 		var whatproject			= 	localStorage.getItem('appwhatproject');
 		var comments			=	localStorage.getItem('appcomments');
+		var range				=	localStorage.getItem('apprange');
 	
 		var viewAll = [
 			timeValue,
 			whatproject,
+			range,
 			comments,
 		];
 			
@@ -24,12 +26,12 @@ function storeItems(id){
 	// getting my selector Items
 	var selTime			=	document.getElementById('jobtime');
 	var timeValue		= 	selTime.options[sel.selectedIndex].text;
-	
+	var range			=	document.getElementById('range').value;
 	
 	localStorage.setItem('appwhatproject',whatproject);
 	localStorage.setItem('appcomments', comments);
 	localStorage.setItem('appjobtime', timeValue);
-
+	localStorage.setItem('apprange', range);
 }
 
 function clearLocal(){
