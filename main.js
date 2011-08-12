@@ -13,9 +13,9 @@ function getItems(){
 		];
 			
 		alert(viewAll);
-		document.getElementById('main').style.display="none";
-		var clearLink= document.getElementById('clear');
-		clearLink.style.display ="block";
+		//document.getElementById('main').style.display="none";
+		//var clearLink= document.getElementById('clear');
+	//	clearLink.style.display ="block";
 		}
 }
 
@@ -34,7 +34,7 @@ function storeItems(id){
 	localStorage.setItem('apprange', range);
 }
 
-function clearLocal(){
+//function clearLocal(){
 	localStorage.clear();
 	return false;
 }	
