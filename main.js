@@ -36,3 +36,18 @@ function clearLocal(){
 	localStorage.clear();
 	return false;
 }	
+
+var sup;  // just couldn't get the radials to work! 
+
+function getRadioButtonValue(){
+	var radioLength = document.forms[0].sup.length;
+//Find out how many radio buttons there are with the name of sup.
+	for (i=0; i < radioLength; i++){
+//Loop through each radio button and find out which one is checked.
+	if(document.forms[0].sup[i].checked == true){
+//When we find the radio button that's checked, set the sup var to the value of the radio button.
+		sup = document.forms[0].sup[i].value;
+		}
+	}
+} //Radials no worky.
+
