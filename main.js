@@ -3,6 +3,8 @@ var sel				=	document.getElementById('jobtime');
 var curOpt 			= 	sel.selectedIndex;
 var value			= 	sel.options[sel.selectedIndex].text;
 var sup; 				
+var clearLink = document.getElementById('clear');
+
 
 function getItems(){
 	if(localStorage.getItem('appwhatproject')){
@@ -12,23 +14,31 @@ function getItems(){
 		var sup					= 	localStorage.getItem('appSuperName');
 		var rangeSlider			=	localStorage.getItem('appRange');
 		
-		//var timeValue			=	localStorage.getItem('appjobtime');
-		
 		var viewAll = [
 			timeValue,
 			whatproject,
 			comments,
 			sup,
-			//timeValue,
 			rangeSlider
 			
 		];
 			
 		alert(viewAll);
 		document.getElementById('main').style.display = "none";
-		var clearLink = document.getElementById('clear');
 		clearLink.style.display = "block";
-	}
+	} 
+	//NOT WORKING!!!!!!
+	//else {
+	//	var timeValue			=	'Please Enter the Time.';
+	//	var whatproject			= 	'Please Enter the Project Name.';
+	//	var sup					= 	'Please Select a Supervisor';
+	//	var rangeSlider			=	'Please choose how much.';
+		
+	//	document.getElementById('timeValue').value    = timeValue;
+	//	document.getElementById('whatproject').value  = whatproject;
+	//	document.getElementById('sup').value          = sup;
+	//	document.getElementById('rangeSlider').value  = rangeSlider;
+
 }
 
 
@@ -41,18 +51,12 @@ function storeItems(id){
 	var rangeSlider      = 	document.getElementById('slider').value;
 	
 	
-	//var selTime			=	document.getElementById('jobtime');
-	//var timeValue		= 	selTime.options[sel.selectedIndex].text;
-	
-	
 	
 	localStorage.setItem('appwhatproject',whatproject);
 	localStorage.setItem('appcomments', comments);
 	localStorage.setItem('appjobtime', timeValue);
 	localStorage.setItem('appSuperName', sup);
 	localStorage.setItem('appRange', rangeSlider);
-	
-	//localStorage.setItem('appjobtime', timeValue);
 	
 	
 }
