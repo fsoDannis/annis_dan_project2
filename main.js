@@ -3,7 +3,20 @@ var sel				=	document.getElementById('jobtime');
 var curOpt 			= 	sel.selectedIndex;
 var value			= 	sel.options[sel.selectedIndex].text;
 var sup; 				
-var clearLink = document.getElementById('clear');
+var clearLink 		= 	document.getElementById('clear');
+var anchorTags		=	clearLink.getElementsByTagName("a");
+
+function mouseHover(){
+	for( var i=0, j=anchorTags.length; i < j; i++){
+		anchorTags[i].style.color = "#424242";
+		}
+	}
+	
+function mouseOut(){
+	for( var i=0, j=anchorTags.length; i<j; i++){
+		anchorTags[i].style.color = "#424242";
+		}
+	}
 
 
 function getItems(){
@@ -26,19 +39,13 @@ function getItems(){
 		alert(viewAll);
 		document.getElementById('main').style.display = "none";
 		clearLink.style.display = "block";
-	} 
-	//NOT WORKING!!!!!!
-	//else {
-	//	var timeValue			=	'Please Enter the Time.';
-	//	var whatproject			= 	'Please Enter the Project Name.';
-	//	var sup					= 	'Please Select a Supervisor';
-	//	var rangeSlider			=	'Please choose how much.';
+	} 	else {
+		var comments			=	'Please enter some additional comments';
+		var whatproject			= 	'Please Enter the Project Name.';
 		
-	//	document.getElementById('timeValue').value    = timeValue;
-	//	document.getElementById('whatproject').value  = whatproject;
-	//	document.getElementById('sup').value          = sup;
-	//	document.getElementById('rangeSlider').value  = rangeSlider;
-
+		document.getElementById('comments').value     = comments;
+		document.getElementById('whatproject').value  = whatproject;
+	}
 }
 
 
