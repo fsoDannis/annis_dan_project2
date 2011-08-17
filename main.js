@@ -25,7 +25,7 @@ function getItems(){
 		];
 			
 		alert(viewAll);
-		document.getElementById('main')style.display = "none";
+		document.getElementById('main').style.display = "none";
 		var clearLink = document.getElementById('clear');
 		clearLink.style.display = "block";
 	}
@@ -67,7 +67,7 @@ function getRadioButtonValue(){
 }
 
 function clearLocal(){
-	localStorage.clear():
+	localStorage.clear();
 	return false;
 	}
 
