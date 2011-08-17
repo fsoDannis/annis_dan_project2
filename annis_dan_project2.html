@@ -16,10 +16,13 @@
 	</head>
 	
 	<body>
-		<div style="width:480px; height:680px;" > <!--Creating a section -->
-			<header id="neworder">
-			<h1>Project List</h1>
-			</header>
+		<div id='container'> 
+			<div id='header'> 
+				<header id="neworder">
+				<h1>Project List</h1>
+				</header>
+			</div>
+			<div id='main'>
 			<form action="#" onsubmit="storeItems();">
 				<fieldset>
 					<legend>Assignments</legend>
@@ -64,14 +67,20 @@
 					
 					<br /><br />
 					<label>Additional Notes:</label><br /><textarea id="comments" cols="55" rows="4" placeholder="Leave a note..." ></textarea>
-					<br /><br />
+					<br />
 					<input id="submit" type="submit" class="submit" value="Ship it!" />
+					
 				</fieldset>
-				<br />
-			</form>	
-			
+			</form>			
+			</div> 
+			<p id="clear"><center> <!--Couldn't get the Clear centered any other way -->
+				<a href="#" onclick="clearlocal(); location.reload();" >
+				Clear Local Storage
+				</a>
+			</center></p>
 		</div>
-		<script src="main.js"></script>
-		<script>getItems();</script>
+			
+	<script src="main.js"></script>
+	<script>getItems();</script>
 	</body>
 </html>

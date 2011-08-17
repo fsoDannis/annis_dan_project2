@@ -21,26 +21,36 @@ margin: 0px 0px;
 color: #FFFFFF;
 
 }
+#container{
+	background-color:#28A6B6;
+	border:1px solid  #000000;
+	width:480px; 
+	height:680px;
+
+{
 
 form{
 	border: 1px solid #202934;
 	padding: 5px;
 	background-color:#28A6B6;
+
 }
 
 fieldset{
-border-color: #FFFFFF;
-
+	border-color: #FFFFFF;
+	text-align:right;
 }
 
 legend{
 color: #FFFFFF;
 font-weight: bold;
-letter-spacing:2px
+letter-spacing:2px;
 }
 
 p{
 line-height: 1.2em;
+color: #000000;
+padding: 5px;
 }
 
 a {
@@ -65,7 +75,7 @@ border-radius: 5px;
 padding:1px 5px;
 }
 
-input[type='range'] {  
+input[id='range'] {  
     -webkit-appearance: none;  
     width: 100px;  
     height: 10px;  
@@ -76,7 +86,7 @@ input[type='range'] {
     background-color: #000000;  
 }  
 
-input[type='range']::-webkit-slider-thumb {  
+input[id='range']::-webkit-slider-thumb {  
     -webkit-appearance: none;  
     background-color: #35344f;  
     width: 10px;  
@@ -108,25 +118,19 @@ textarea {
 }
 
 hr{
-color: #FFFFFF
+color: #FFFFFFF;
 }
 
 input#submit{
-background-color: #35344f;
-color: #FFFFFF;
-border-radius: 5px;
-padding:2px 6px;
+	background-color: #35344f;
+	color: #FFFFFF;
+	border-radius: 5px;
+	padding:2px 6px;
 }
 
-
-
-#clear{ 
-display: none;
-margin: 15px;
-text-align:center;
-}
-
-	#clear a{color:#000000;}
+p#clear{
+	text-align:center;
+{
 
 
 
