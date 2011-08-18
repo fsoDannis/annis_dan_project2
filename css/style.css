@@ -11,34 +11,34 @@ header#neworder {
 	font-weight:bold;
 	font-family:"Times New Roman",Georgia,Serif;
 	font-style: italic;
-	padding: 2px 0px;
+	padding: 1px 0px;
 	border: 1px solid #202934;
+	color: #000000;
 }
 
 h1 {
 text-align:center;
 margin: 0px 0px;
-color: #FFFFFF;
-
+color:#FFFFFF;
 }
 #container{
 	background-color:#28A6B6;
 	border:1px solid  #000000;
 	width:480px; 
-	height:680px;
+	
 
-{
+}
 
 form{
 	border: 1px solid #202934;
-	padding: 5px;
+	padding: 2px 2px;
 	background-color:#28A6B6;
 
 }
 
 fieldset{
 	border-color: #FFFFFF;
-	text-align:right;
+
 }
 
 legend{
@@ -50,7 +50,7 @@ letter-spacing:2px;
 p{
 line-height: 1.2em;
 color: #000000;
-padding: 5px;
+padding: 1px;
 }
 
 a {
@@ -118,31 +118,75 @@ textarea {
 }
 
 hr{
-color: #FFFFFFF;
+color: #FFFFFF;
 }
 
 input#submit{
 	background-color: #35344f;
 	color: #FFFFFF;
 	border-radius: 5px;
-	padding:2px 6px;
+	padding:1px 6px;
 }
 
-p#clear{
+#clear{
 	text-align:center;
-{
+	display:none;
+}
 
 
+#storedItems{
+	background-color:#28A6B6;
+	display:none;
+	padding: 5px 0px 00px 20px;
+	width:460px;
+	border: 1px solid #202934;
+	}
 
 
-
-
+#results{
+	background-color: #28A6B6;
+	color: #FFFFFF;
+	padding: 20px 0px 00px 20px;
+	width:460px;
+	height:200px;
+	border: 1px solid #202934;
+	}
  
 
+#namepic1{
+	width:480px;
+	display:none;
+	text-align:center;
+	border: 1px solid #202934;
+	}
 
+#namepic2{
+	width:480px;
+	display:none;
+	text-align:center;
+	border: 1px solid #202934;
+	}
 
-
-
+#namepic3{
+	width:480px;
+	display:none;
+	text-align:center;
+	border: 1px solid #202934;
+	}
+	
+#namepic4{
+	width:480px;
+	display:none;
+	text-align:center;
+	border: 1px solid #202934;
+	}
+	
+#namepic5{
+	width:480px;
+	display:none;
+	text-align:center;
+	border: 1px solid #202934;
+	}
 
 
 

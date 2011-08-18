@@ -27,24 +27,47 @@ function getItems(){
 		var sup					= 	localStorage.getItem('appSuperName');
 		var rangeSlider			=	localStorage.getItem('appRange');
 		
-		var viewAll = [
+		/* var viewAll = [
 			timeValue,
-			whatproject,
-			comments,
 			sup,
-			rangeSlider
-			
-		];
-			
-		alert(viewAll);
+			whatproject,
+			rangeSlider,
+			comments
+		];	
+		alert(viewAll); */
+	
 		document.getElementById('main').style.display = "none";
-		clearLink.style.display = "block";
-	} 	else {
-		var comments			=	'Please enter some additional comments';
-		var whatproject			= 	'Please Enter the Project Name.';
+		document.getElementById('storedItems').style.display = "block";
+		var pic = localStorage.getItem('appSuperName');
+		 if (pic=="Dan Annis") {
+        document.getElementById("namepic1").style.display ="block";
+  		  }else if (pic=="Ken Senter") {
+        document.getElementById("namepic2").style.display ="block";
+        }else if (pic=="Matt Vornberg") {
+        document.getElementById("namepic3").style.display ="block";
+        }else if (pic=="Kristy Hardin") {
+        document.getElementById("namepic4").style.display ="block";
+        }else if (pic=="Fred Lattimore") {
+        document.getElementById("namepic5").style.display ="block";
+        }
+		document.getElementById('results').innerHTML = 
+		"<div>"+ "Project Name: " + whatproject +"<p />"
+		+ "Supervisor's Name: " + sup +"<p />"
+		+ "Assignment Time: " + timeValue +"<p />"
+		+ "How Many times will this be done: " + rangeSlider +"<p />"
+		+ "Any Additional Comments: " + comments +"<p />"
 		
-		document.getElementById('comments').value     = comments;
+		"</div>"
+		
+		
+		;
+		clearLink.style.display = "block";
+
+
+	} 	else {
+		 var whatproject			= 	'Please Enter the Project Name.';
 		document.getElementById('whatproject').value  = whatproject;
+		 
 	}
 }
 
@@ -82,3 +105,21 @@ function clearLocal(){
 	return false;
 	}
 
+//Validating Fields
+
+function validateForm(){
+	var getProject = document.forms[0]['whatproject'].value;
+	if(getProject == ""){
+		document.getElementById('whatproject').style.border = "1px solid red";
+		var encourage = prompt('What is the Project Name?',"");
+		if (encourage != null && encourage !=""){
+			document.forms[0]['whatproject'].value=encourage;
+		}
+		return false;
+	} else{
+		document.getElementById('whatproject').style.border ="1px solid #ccc";
+	}
+	alert('Form is Valid.. Ship It!');
+	
+}
+	

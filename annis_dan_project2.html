@@ -23,7 +23,8 @@
 				</header>
 			</div>
 			<div id='main'>
-			<form action="#" onsubmit="storeItems();">
+			<form action="#" onsubmit="storeItems();"> 
+			
 				<fieldset>
 					<legend>Assignments</legend>
 						<p> Each Supervisor should be tasked with at least one assignment. Use this form to create the daily assignments. If you are not sure which assignments need to be assigned, check out this <a href="http://www.dinkydetails.com" target="new">link</a> which has all the necessary assignments.</p>
@@ -34,11 +35,10 @@
 								<option value="e">Evening</option>
 						</select>
 						
-						<br />
-						<br />
+					<br /> <br />
 						Supervisor Name:
 						<ul id="supervisor">
-							<li><label><input type="radio" checked value="Dan Annis" name="sup" />Dan Annis</label></li>
+							<li><label><input type="radio" checked value="Dan Annis"  name="sup" />Dan Annis</label></li>
 							<li><label><input type="radio" value="Ken Senter" name="sup" />Ken Senter</label></li>
 							<li><label><input type="radio" value="Matt Vornberg" name="sup" />Matt Vornberg</label></li>
 							<li><label><input type="radio" value="Kristy Hardin" name="sup" />Kristy Hardin</label></li>
@@ -67,17 +67,38 @@
 					
 					<br /><br />
 					<label>Additional Notes:</label><br /><textarea id="comments" cols="55" rows="4" placeholder="Leave a note..." ></textarea>
-					<br />
+					<br /> <br /> 
+					<input id="validate" type="button" onclick="validateForm();" class="validate" value="Validate Form" />
 					<input id="submit" type="submit" class="submit" value="Ship it!" />
-					
 				</fieldset>
 			</form>			
-			</div> 
-			<p id="clear"><center> <!--Couldn't get the Clear centered any other way -->
+			</div>
+			</div>
+			<div id="namepic1">
+            <img class="sup" src="dan.jpg" >
+            </div>
+            <div id="namepic2">
+            <img class="sup2" src="ken.jpg" >
+            </div>
+            <div id="namepic3">
+            <img class="sup3" src="vorny.jpg" >
+            </div>
+            <div id="namepic4">
+            <img class="sup4" src="hardin.jpg" >
+            </div>
+            <div id="namepic5">
+            <img class="sup5" src="fred.jpg" >
+            </div>
+			<div id='results'></div>
+			<div id='storedItems'>
+			<p id="clear">
 				<a onmouseover="mouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal(); location.reload();" >
 				Clear Local Storage
 				</a>
-			</center></p>
+			</p>
+			
+			</div>
+		
 		</div>
 			
 	<script src="main.js"></script>
