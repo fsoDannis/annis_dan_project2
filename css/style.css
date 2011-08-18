@@ -21,12 +21,11 @@ text-align:center;
 margin: 0px 0px;
 color:#FFFFFF;
 }
+
 #container{
 	background-color:#28A6B6;
 	border:1px solid  #000000;
 	width:480px; 
-	
-
 }
 
 form{
@@ -148,6 +147,7 @@ input#submit{
 	padding: 20px 0px 00px 20px;
 	width:460px;
 	height:200px;
+	display:none;
 	border: 1px solid #202934;
 	}
  
