@@ -145,7 +145,6 @@ input#submit{
 
 #results{
 	background-color: #28A6B6;
-	color: #FFFFFF;
 	padding: 20px 0px 00px 20px;
 	width:460px;
 	height:200px;
@@ -187,6 +186,4 @@ input#submit{
 	text-align:center;
 	border: 1px solid #202934;
 	}
-
-
 

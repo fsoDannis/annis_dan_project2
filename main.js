@@ -53,10 +53,10 @@ function getItems(){
         }
 		document.getElementById('results').innerHTML = 
 		"<div>"+ "Project Name: " + whatproject +"<p />"
-		+ "Supervisor's Name: " + sup +"<p />"
-		+ "Assignment Time: " + timeValue +"<p />"
-		+ "How Many times will this be done: " + rangeSlider +"<p />"
-		+ "Any Additional Comments: " + comments +"<p />"
+			+ "Supervisor's Name: " + sup +"<p />"
+			+ "Assignment Time: " + timeValue +"<p />"
+			+ "How Many times will this be done: " + rangeSlider +"<p />"
+			+ "Any Additional Comments: " + comments +"<p />"
 		
 		"</div>"
 		
