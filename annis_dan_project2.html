@@ -16,13 +16,13 @@
 	</head>
 	
 	<body>
-		<div id='container'> 
+		<div id='container'> <!-- Wrapper -->
 			<div id='header'> 
 				<header id="neworder">
 				<h1>Project List</h1>
 				</header>
 			</div>
-			<div id='main'>
+			<div id='main'> <!-- main div that holds the content -->
 			<form action="#" onsubmit="storeItems();"> 
 			
 				<fieldset>
@@ -37,7 +37,7 @@
 						
 					<br /> <br />
 						Supervisor Name:
-						<ul id="supervisor">
+						<ul id="supervisor"> <!-- Define the Supervisors -->
 							<li><label><input type="radio" checked value="Dan Annis"  name="sup" />Dan Annis</label></li>
 							<li><label><input type="radio" value="Ken Senter" name="sup" />Ken Senter</label></li>
 							<li><label><input type="radio" value="Matt Vornberg" name="sup" />Matt Vornberg</label></li>
@@ -73,7 +73,7 @@
 				</fieldset>
 			</form>			
 			</div>
-			</div>
+			</div> <!-- Pictures to show.. by default not showing -->
 			<div id="namepic1">
             <img class="sup" src="dan.jpg" >
             </div>
@@ -91,7 +91,7 @@
             </div>
 			<div id='results'></div>
 			<div id='storedItems'>
-			<p id="clear">
+			<p id="clear"> <!-- Clear the Items -->
 				<a onmouseover="mouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal(); location.reload();" >
 				Clear Local Storage
 				</a>

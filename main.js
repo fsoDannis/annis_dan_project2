@@ -6,18 +6,19 @@ var sup;
 var clearLink 		= 	document.getElementById('clear');
 var anchorTags		=	clearLink.getElementsByTagName("a");
 
+// Mouse Functions
 function mouseHover(){
 	for( var i=0, j=anchorTags.length; i < j; i++){
 		anchorTags[i].style.color = "#424242";
 		}
-	}
-	
+	}	
 function mouseOut(){
 	for( var i=0, j=anchorTags.length; i<j; i++){
 		anchorTags[i].style.color = "#424242";
 		}
 	}
 
+//Getting the Items
 
 function getItems(){
 	if(localStorage.getItem('appwhatproject')){
@@ -71,6 +72,7 @@ function getItems(){
 	}
 }
 
+//Storing Items
 
 function storeItems(id){
 	getRadioButtonValue();
@@ -91,6 +93,8 @@ function storeItems(id){
 	
 }
 
+// Checking which buttons are pressed
+
 function getRadioButtonValue(){
 	var radioLength = document.forms[0].sup.length;
 	for (i=0; i < radioLength; i++){
@@ -99,6 +103,8 @@ function getRadioButtonValue(){
 		}
 	}
 }
+
+// Clearing Local Storage
 
 function clearLocal(){
 	localStorage.clear();
